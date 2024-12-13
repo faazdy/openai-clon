@@ -1,0 +1,35 @@
+.carrousel{
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    gap: 8px;
+    padding: .4em 1.2em;
+}
+.slideCard{
+    flex-shrink: 0; /*para que no se hagan pequeños*/
+    width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    h2{font-size: 48px; font-weight: 500; color: black; margin: .3em 0;}
+    button{
+        padding: .7em 1.5em; 
+        border-radius: 20px;
+        border: 0;
+        background-color: black;
+        color: white;
+        margin-top: 2em;
+        cursor: pointer;
+    }
+}
+.light{
+    h2,p{color: white !important;}
+    button{
+        background-color: white !important;
+        color: black !important;
+    }
+}
