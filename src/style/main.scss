@@ -1,0 +1,43 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+$bg1: #FFFFFF;
+$textColor: #1A1A1A;
+$textColor2: #6E6E7E;
+$borderColor: #E5E7EB;
+$fSize1: 13px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background-color: $bg1;
+    color: $textColor;
+}
+
+header{
+    background-color: rgba(245, 245, 245, 0.664);
+    backdrop-filter: blur(5px);
+    padding: 1.2em 1em;
+
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h1{font-size: 17px;}
+        .tags{
+            display: flex;
+            align-items: center;
+            a{
+                display: inline-block;
+                font-size: $fSize1;
+                margin: 0 1em;
+                text-decoration: none;
+                color: $textColor;
+            }
+        }
+    }
+}
